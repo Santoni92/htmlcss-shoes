@@ -11,7 +11,8 @@
 
 .prima-scheda{
     background-color: red;
-    position:relative;
+    position:relative;  /*in questo modo l'elemento img viene ad avere il padre(diretto) con proprietà
+                          position diversa da static;altrimenti avrebbe fatto riferimento al body*/
 }
 
 .seconda-scheda{
@@ -25,6 +26,11 @@
 
 nav{
     position:fixed;
+    z-index: 2; /*perchè gli elementi con proprietà 'position:absolute' assumono automaticamente
+                  uno z-index pari a 1 e quindi vengono ad essere in primo piano rispetto agli altri
+                  elementi.Ora,siccome voglio che il menù di navigazione sia sempre visbile,oltre
+                  ad impostare 'position:fixed' ci metto un 'z-index:2' cosicchè viene ad essere il menù
+                  con z-index maggiore e quidi si vede in primo piano rispetto agli elementi absolute*/
     top:30px;
     right:15px;
 }
@@ -44,7 +50,7 @@ nav li a {
     font-weight: 800;
 }
 
-img{
+.img{
     height: 400px;
     position:absolute;
     top:50%;
