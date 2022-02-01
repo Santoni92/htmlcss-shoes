@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.container{
+    height: 100vh;
+    width:100%;
+    background-color: red;
+}
+
+img{
+    height: 400px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.descrizione{
+    
+}
