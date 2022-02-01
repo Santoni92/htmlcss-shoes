@@ -11,10 +11,16 @@
 
 .prima-scheda{
     background-color: red;
+    position:relative;
 }
 
 .seconda-scheda{
     background-color: green;
+    position:relative;
+}
+.terza-scheda{
+    background-color: yellow;
+    position:relative;
 }
 
 nav{
