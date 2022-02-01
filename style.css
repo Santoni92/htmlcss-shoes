@@ -4,6 +4,10 @@
     box-sizing:border-box;
 }
 
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
 .container{
     height: 100vh;
     width:100%;
@@ -13,11 +17,13 @@
     background-color: red;
     position:relative;  /*in questo modo l'elemento img viene ad avere il padre(diretto) con proprietà
                           position diversa da static;altrimenti avrebbe fatto riferimento al body*/
+                    
 }
 
 .seconda-scheda{
     background-color: green;
     position:relative;
+    
 }
 .terza-scheda{
     background-color: yellow;
@@ -51,16 +57,49 @@ nav li a {
 }
 
 .img{
-    height: 400px;
+    width: 100px;
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
 }
 
-.descrizione{
+.descrizione-1{
     position:absolute;
-    left:30%;
+    left:40%;
     bottom:15%;
     color:yellow;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.descrizione-2{
+    position:absolute;
+    left:40%;
+    bottom:10%;
+    color:yellow;
+    padding-left:110px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.descrizione-3{
+    position:absolute;
+    left:40%;
+    bottom:10%;
+    color:green;
+    padding-left:110px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.descrizione-4{
+    position:absolute;
+    left:40%;
+    bottom:10%;
+    color:green;
+    padding-left:110px;
+    font-weight: 800;
+    font-size: 30px;
 }
