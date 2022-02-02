@@ -4,6 +4,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior: smooth;    /*per spostarsi in maniera fluida attraverso le sezioni e non avere l'effetto di scatto*/
+}
+
 body{
     font-family: 'Rubik Mono One', sans-serif;
     overflow:hidden;    /*per togliere la scrollbar*/
@@ -18,17 +22,25 @@ body{
     background-color: red;
     position:relative;  /*in questo modo l'elemento img viene ad avere il padre(diretto) con proprietà
                           position diversa da static;altrimenti avrebbe fatto riferimento al body*/
-                    
+    height: 100vh;           
 }
 
 .seconda-scheda{
     background-color: green;
-    position:relative;
-    
+    position: relative;
+    height: 100vh;  
 }
 .terza-scheda{
     background-color: yellow;
-    position:relative;
+    position: relative;
+    height: 100vh; 
+}
+
+.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 nav{
@@ -57,52 +69,16 @@ nav li a {
     font-weight: 800;
 }
 
-.img{
-    width: 100px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+nav li a:hover{
+    transform: scale(1.2);  /*i numeri di navigazione si sollevano al passaggio del mouse*/
 }
 
-.descrizione-1{
-    position:absolute;
-    left:40%;
-    bottom:15%;
+.text-yellow{
     color:yellow;
     font-weight: 800;
-    font-size: 30px;
-    margin-bottom: 10px;
 }
 
-.descrizione-2{
-    position:absolute;
-    left:40%;
-    bottom:10%;
-    color:yellow;
-    padding-left:110px;
-    font-weight: 800;
-    font-size: 30px;
-}
-
-.descrizione-3{
-    position:absolute;
-    left:40%;
-    bottom:10%;
+.text-green{
     color:green;
-    padding-left:110px;
     font-weight: 800;
-    font-size: 30px;
-    margin-bottom:30px;
-}
-
-.descrizione-4{
-    position:absolute;
-    left:40%;
-    bottom:10%;
-    color:green;
-    padding-left:130px;
-    font-weight: 800;
-    font-size: 30px;
-
 }
