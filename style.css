@@ -93,6 +93,7 @@ nav li a {
     padding-left:110px;
     font-weight: 800;
     font-size: 30px;
+    margin-bottom:30px;
 }
 
 .descrizione-4{
@@ -100,7 +101,8 @@ nav li a {
     left:40%;
     bottom:10%;
     color:green;
-    padding-left:110px;
+    padding-left:130px;
     font-weight: 800;
     font-size: 30px;
+
 }
